@@ -24,7 +24,7 @@ wget -O Config.json  https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Confi
 ```
 国内请使用
  ```
-wget -O Config.json   https://ghproxy.com/https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Config.json
+wget -O Config.json   https://ghproxy.com/https://raw.githubusercontent.com/zhanxiaofei/nvjdc/main/Config.json
 ```
 
 4 创建chromium文件夹并进入
@@ -62,7 +62,7 @@ sudo docker pull nolanhzy/nvjdc:0.1
 ```
 sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
 -v "$(pwd)"/.local-chromium:/app/.local-chromium  \
--it --privileged=true  nolanhzy/nvjdc:0.1 
+-it --privileged=true  nolanhzy/nvjdc:latest
 ```
 
 10查看 日志 
